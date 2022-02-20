@@ -1,35 +1,20 @@
 import React from "react";
-import title from './img/title.png';
 import styles from './styles/header.module.scss';
-import iconWifi from './img/icon-wifi.png';
-import iconBeach from './img/icon-beach.png';
-import iconParking from './img/icon-parking.png';
-import iconPets from './img/icon-pets.png';
-import iconMarkets from './img/icon-market.png';
-import bookNow from './img/booknow.png';
-import logoAirbnb from './img/logo-airbnb.png';
-import logoBooking from './img/logo-booking.png';
-import logoFacebook from './img/logo-facebook.png';
+import logo from './img/logo.png';
 
 const Header = () => {
     return(
         <header className={styles.header}>
-            <div className={styles.title} />
-            <div className={styles.break} />
-            <div className={styles.services}>
-                <div className={styles.service}><img src={iconWifi} alt="WiFi"/></div>
-                <div className={styles.service}><img src={iconBeach} alt="Beach"/></div>
-                <div className={styles.service}><img src={iconParking} alt="Parking"/></div>
-                <div className={styles.service}><img src={iconPets} alt="Pets"/></div>
-                <div className={styles.service}><img src={iconMarkets} alt="Super Markets"/></div>
+            <div className={`d-flex justify-content-center mt-5 ${styles.mainMenu}`}>
+                <div className={`p-2 pt-5 pl-3`}><a href="#house">THE HOUSE</a></div>
+                <div className={`p-2 pt-5 ml-5`}><a href="#gallery">GALLERY</a></div>
+                <div className={`ml-5 mr-5`}><img src={logo} alt="T&P Houses Playa Grande"/></div>
+                <div className={`p-2 pt-5 ml-3`}><a href="#booking">CHECK AVAILABILITY</a></div>
+                <div className={`p-2 pt-5 ml-5`}><a href="#map">MAP</a></div>
             </div>
-            <div className={styles.bookNowBar}>
-                <div className={styles.bookNow}><img src={bookNow} alt="Book Now!"/></div>
-                <div className={styles.logoBar}>
-                    <div className={styles.logo}><a href="http://airbnb.com/h/tortugoypolloplayagrandeguanacaste" target="_blank"><img src={logoAirbnb} alt="AirBnB"/></a></div>
-                    <div className={styles.logo}><a href="http://www.booking.com/Share-4fhVLM" target="_blank"><img src={logoBooking} alt="Booking.com"/></a></div>
-                    <div className={styles.logo}><a href="https://www.facebook.com/profile.php?id=100078244413511" target="_blank"><img src={logoFacebook} alt="Facebook"/></a></div>
-                </div>
+            <div className={`d-flex flex-column justify-content-center align-items-center ${styles.mainPhoto}`}>
+                <h1 className={`pt-5`}>RELAX AND ENJOY</h1>
+                <h2 className={`pt-5`}>IN A PRIVATE HOUSE AT PLAYA GRANDE</h2>
             </div>
         </header>
       );

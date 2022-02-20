@@ -1,7 +1,7 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import './colors.scss';
-@import './variables.scss';
 
-.gallery {
-  min-height: 421px;
+@font-face {
+  font-family: AvenirRoman;
+  src: url(../fonts/AvenirLTStd-Roman.otf);
 }
+

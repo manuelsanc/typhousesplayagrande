@@ -1,0 +1,20 @@
+@import './colors.scss';
+
+@font-face {
+  font-family: AvenirRoman;
+  src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+
+.house {
+  color: black;
+  background-color: white;
+}
+
+.house h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26pt;
+}
+.houseText {
+  font-family: AvenirRoman;
+  font-size: 14pt;
+}

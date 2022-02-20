@@ -1,17 +1,15 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import './colors.scss';
-@import './variables.scss';
 
 .footer {
-  height: 2.8cm;
-  background-color: #bcb8b1;
-  color: $primary;
-  display: grid;
-  justify-content: flex-end;
-  padding-top: 10px;
-  margin-top: 20px;
+  font-family: Avenir;
+  color: balck;
+  font-size: 12pt;
 }
 
-.footer div{
-  margin-right: 40px;
+.footer a:link {
+  color: balck;
+}
+
+.footer a:hover {
+  color: $greenBackground;
 }

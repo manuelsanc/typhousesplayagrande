@@ -1,0 +1,56 @@
+@import './colors.scss';
+
+@font-face {
+  font-family: AvenirRoman;
+  src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+
+.menuPhoto {  
+  font-family: Avenir;
+  color: white;
+  font-size: 26pt;
+}
+.menuPhoto a{
+  color: inherit;
+  text-decoration: none;
+}
+.menuPhoto a:hover{
+  color: $greenFont;
+  text-decoration: none;
+}
+.menuPhotoHouse {
+  background-image: url('../img/menuPhoto-House.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 437px;
+  height: 100%;
+  width: 100%;
+  padding-top: 280px;
+}
+.menuPhotoGallery {
+  background-image: url('../img/menuPhoto-Gallery.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 437px;
+  height: 100%;
+  width: 100%;
+  padding-top: 280px;
+}
+.menuPhotoAvailability {
+  background-image: url('../img/menuPhoto-Availability.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 437px;
+  height: 100%;
+  width: 100%;
+  padding-top: 280px;
+}
+.menuPhotoMap {
+  background-image: url('../img/menuPhoto-Map.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 437px;
+  height: 100%;
+  width: 100%;
+  padding-top: 280px;
+}

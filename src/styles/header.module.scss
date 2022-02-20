@@ -1,71 +1,43 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import './colors.scss';
-@import './variables.scss';
+
+@font-face {
+  font-family: AvenirRoman;
+  src: url(../fonts/AvenirLTStd-Roman.otf);
+}
 
 .header {
-  min-height: 421px;
-  background-image: url('../img/portada.png');
-  background-position: right;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header a{
+  color: inherit;
+  text-decoration: none;
+}
+.header a:hover{
+  color: $greenBackground;
+  text-decoration: none;
+}
+.mainMenu {
+  font-size: 18pt;
+  font-weight: bold;
+}
+.mainPhoto {
+  background-image: url('../img/mainPhoto.png');
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: $grey;
-  display: flex;
-  flex-direction: column;
+  height: 442px;
 }
 
-.title {
-  background-image: url('../img/title.png');
-  background-position: left;
-  background-repeat: no-repeat;
-  height: 180px;
-  padding-top: 20px;
-  padding-left: 20px;
-  background-origin: content-box, padding-box;
+.mainPhoto h1 {
+  font-family: Avenir;
+  color: white;
+  font-size: 32pt;
+  text-shadow: 0 0 3px gray, 0 0 5px gray;
 }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
+.mainPhoto h2 {
+  font-family: Avenir;
+  color: white;
+  font-size: 12pt;
+  text-shadow: 0 0 3px gray, 0 0 5px gray;
 }
-
-.services {
-  display: flex;
-  height: 220px;
-  align-items: flex-end;
-  padding-left:20px;
-}
-
-.service {
-  padding-left:20px;
-}
-
-.bookNowBar {
-  background-color: white;
-  width: 400px;
-  flex-direction: row;
-  display: flex;
-  top: -25px;
-  position: relative;
-  left: 55%;
-}
-
-.bookNow {
-  background-color: #d8a300;
-  width: 50px;
-  justify-content: center;
-  align-content: center;
-}
-
-.logoBar {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.logo {
-  padding-left: 20px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin: auto;
-}
-
-/* https://designmodo.com/bootstrap-react-sass/ */
